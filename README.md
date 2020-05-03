@@ -19,9 +19,9 @@
 ●没有写完的广播和音乐播放（哭）
 
 ## 心得体会
-●不能播放音乐的音乐播放器好糟糕啊（doge）
-●Negivation+viewPager+Fragment的使用（这个现在太熟练了...）
-●为什么我的圆角imageview画不对，明明圆形都能画 
+●不能播放音乐的音乐播放器好糟糕啊（doge） 
+●Negivation+viewPager+Fragment的使用（这个现在太熟练了...） 
+●为什么我的圆角imageview画不对，明明圆形都能画  
 
 ## Gif展示
 ![**View**](https://github.com/965023780/MusicPlayer/blob/master/Login.png)
