@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_account_avator"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/home_account_red"
+        android:src="@mipmap/home_account_like"
+        app:layout_constraintEnd_toStartOf="@id/home_account_blue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/home_account_green"
+        android:src="@mipmap/home_account_message"
+        app:layout_constraintStart_toEndOf="@id/home_account_blue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/home_account_blue"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/home_account_blue"
+        android:src="@mipmap/home_account_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_account_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Barbara Andrews"
+        android:textColor="#ff1c252a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/home_account_blue" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/home_account_pin"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@id/home_account_pin"
+        app:layout_constraintTop_toBottomOf="@id/home_account_nickname" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_account_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="400823"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_nickname" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/home_account_number"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_pin">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_account_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="20000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+            android:id="@+id/home_account_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/home_account_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_number">
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="25dp"
+                android:text="Followers"
+                android:textSize="15dp"
+                android:textColor="#AFADAD" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="25dp"
+                android:text="Posts"
+                android:textSize="15dp"
+                android:textColor="#AFADAD" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="25dp"
+                android:text="Following"
+                android:textSize="15dp"
+                android:textColor="#AFADAD" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
